@@ -6,7 +6,6 @@
   --color-fondo: #000000;
   --color-footer: #151515;
 }
-
 body {
   padding: 0;
   margin: 0;
@@ -27,7 +26,6 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--color-fondo);
 }
-
 h1 {
   position: relative;
   font-weight: 700;
@@ -50,11 +48,9 @@ h1 {
   0% {
     transform: translateY(-50%);
   }
-
-  50% {
+  50%{
     transform: translateY(10%);
   }
-
   100% {
     transform: translateY(0%);
   }
@@ -64,23 +60,20 @@ h1 {
   0% {
     transform: translateY(50%);
   }
-
-  50% {
+  50%{
     transform: translateY(-10%);
   }
-
   100% {
     transform: translateY(0%);
   }
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar{
   background-color: black;
   width: 11px;
   border-left: 0.1px solid white;
 }
-
-::-webkit-scrollbar-thumb {
+::-webkit-scrollbar-thumb{
   background-color: whitesmoke;
   border-radius: 7px;
 

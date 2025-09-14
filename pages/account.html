@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Account</title>
+
+    <!-- FUENTE GOOGLE FONTS : Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- ICONS: Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
+
+    <!-- ICONS: Line Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"
+    />
+
+    <!-- Animaciones AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/account.css">
+    
+    <!-- Icono -->
+    <link rel="icon" href="../img/Exclusivas página.jpeg">
+  </head>
+
+
+  <body>
+    <!-- =================================
+           HEADER MENU
+        ================================== -->
+    <div class="hm-header">
+      <header class="container">
+        <div class="header-menu">
+          <div class="hm-logo">
+            <a href="../index.html">
+              <img src="../img/Captured Styles.jpg" alt="" />
+            </a>
+          </div>
+
+          <!-- Botón para desplegar el submenú -->
+          <div class="submenu-toggle">
+            <button id="submenuButton" type="button">
+              <i class="fas fa-user-circle"></i>
+            </button>
+          </div>
+
+          <!-- Submenú que se mostrará/ocultará al hacer clic en el botón -->
+          <div class="submenu-vertical hidden">
+            <ul>
+              <li><a href="./pages/login.html">Inicia Sesion</a></li>
+              <li><a href="./pages/account.html">Tu cuenta</a></li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#couponsModal"
+                  >Cupones</a
+                >
+              </li>
+              <li>
+                <a href="#" data-toggle="modal" data-target="#ordersModal"
+                  >Órdenes</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <nav class="hm-menu">
+            <ul>
+              <li><a href="#Nosotros">Nosotros</a></li>
+              <li><a href="#Categorias">Categorías</a></li>
+              <li><a href="#productos-populares">Productos</a></li>
+              <li><a href="#Contáctanos">Contáctanos</a></li>
+            </ul>
+
+            <div class="hm-icon-cart">
+              <a href="#">
+                <i class="las la-shopping-cart"></i>
+                <span>0</span>
+              </a>
+            </div>
+
+            <div class="icon-menu">
+              <button type="button"><i class="fas fa-bars"></i></button>
+            </div>
+          </nav>
+        </div>
+      </header>
+    </div>
+
+    <!-- =================================
+           HEADER MENU Movil
+        ================================== -->
+    <div class="header-menu-movil">
+      <button class="cerrar-menu"><i class="fas fa-times"></i></button>
+      <ul>
+        <li><a href="#Categorias">Categorías</a></li>
+        <li><a href="#Productos">Productos</a></li>
+        <li><a href="#Nosotros">Nosotros</a></li>
+        <li><a href="#Contáctanos">Contáctanos</a></li>
+      </ul>
+    </div>
+
+
+    <section class="seccionAccount">
+      <h1>Tu perfil</h1>
+      <div class="menuAccount">
+        <ul>
+          <li> <i class="fa fa-user-circle"></i> Tu cuenta</li>
+          <li> <i class="fa fa-history"></i> Tus compras</li>
+          <li> <i class="la la-ticket"></i> Tus cupones</li>
+        </ul>
+      </div>
+      <div class="optionsAccount">
+        <form class="editUserForm" action="">
+          <div>
+            <label for="nombre">Nombres</label>
+            <input id="nombre" type="text" placeholder="Tu nombre:">
+          </div>
+          <div>
+            <label for="apellido">Apellidos</label>
+            <input id="apellido" placeholder="Tu apellido:" type="text">
+          </div>
+          <div>
+            <label for="direccion">Direccion</label>
+            <input id="direccion" placeholder="Tu direccion" type="text">
+          </div>
+          <div>
+            <label for="telefono">Número de telefono</label>
+            <input id="telefono" placeholder="Tu numero de telefono:" type="text">
+          </div>
+          <br><br>
+          <button class="btnSubmit">Actualizar datos</button>
+        </form>
+      </div>
+    </section>
+  </body>
+  <script>
+    const inputNombre = document.getElementById('nombre')
+
+    inputNombre.placeholder += 'hola'
+  </script>
+</html>

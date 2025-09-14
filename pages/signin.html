@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/login.css">
+  <title>Crea tu cuenta</title>
+</head>
+
+
+<body>
+  <a class="btnVolver" href="../index.html">
+    <span>Volver al inicio</span>
+  </a>
+  <div class="login-box" id="login-contenedor">
+    <p>Crea tu cuenta</p>
+    <form id="login-box">
+      <div class="user-box">
+        <input id="usrNombre" name="usrNombre" type="text" required>
+        <label>Nombre</label>
+      </div>
+      <div class="user-box">
+        <input id="usrApellidos" name="apellido" type="text" required>
+        <label>Apellidos</label>
+      </div>
+      <div class="user-box">
+        <input id="usrUsername" name="username" type="text" required>
+        <label>Nombre de usuario</label>
+      </div>
+      <div class="user-box">
+        <input id="usrEmail" name="email" type="email" required>
+        <label>Email</label>
+      </div>
+      
+      <div class="user-box">
+        <input id="usrDireccion" required name="Direccion" type="text">
+        <label>Direccion</label>
+      </div>
+      <div class="user-box">
+        <input id="usrNumeroDeTelefono" required name="telefono" type="text">
+        <label>Numero de telefono</label>
+      </div>
+      <div class="user-box">
+        <input id="usrDocumento" required name="documento" type="text">
+        <label>Numero de documento</label>
+      </div>
+      <div class="user-box">
+        <input id="usrPassword" name="Contraseña" type="password" required>
+        <label>Contraseña</label>
+      </div>
+      <button id="btnEnviar" type="submit">
+          <span></span>
+          Crea tu usuario
+        </button>
+    </form>
+
+    <span class="avisoUsuario" id="avisoUsuario"></span>
+
+
+    <p>No tienes una cuenta? <a href="./signin.html" class="a2">Únete!</a></p>
+
+    <p>Ya tienes una cuenta? <a href="./login.html" class="a2">Inicia secion!</a></p>
+  </div>
+
+  <script src="../js/signin.js"></script>
+</body>
+</html>

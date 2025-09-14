@@ -1,0 +1,52 @@
+<div class="dropdown">
+  <button
+    class="btn dropdown-toggle btn-user"
+    type="button"
+    [style.top]="buttonTopValue"
+    #userButton
+    data-bs-toggle="dropdown"
+  >
+    <i class="fas fa-user-circle"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-item">Iniciar Sesion</li>
+    <li class="dropdown-item">Registrarse</li>
+    <li class="dropdown-item">Tu cuenta</li>
+    <li class="dropdown-item">Cupones</li>
+  </ul>
+</div>
+<nav #headerMenu class="container navbar navbar-expand-lg rounded p-4 bg-black">
+  <img
+    #logo
+    class="navbar-brand py-0 ps-xl-5 ps-lg-4"
+    src="Captured Styles.jpg"
+    alt="Logo Captured Styles"
+  />
+
+  <button
+    class="navbar-toggler"
+    type="button"
+    data-bs-toggle="collapse"
+    data-bs-target="#navbar-target-collapse"
+    aria-controls="navbarNav"
+    aria-expanded="false"
+    aria-label="Toggle navigation"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="row align-items-center text-white fw-medium collapse navbar-collapse"
+    id="navbar-target-collapse"
+  >
+    <span (click)="scrollTo('nosotros')" class="col-lg nav-item">Nosotros</span>
+    <span (click)="scrollTo('categorias')" class="col-lg nav-item"
+      >Categorias</span
+    >
+    <span class="col-lg nav-item">Productos</span>
+    <span class="col-lg nav-item">Contactanos</span>
+    <span class="col cart-container justify-content-end">
+      <i class="las la-shopping-cart"></i>
+      <span class="counter-cart"> {{ productsInCart }}</span>
+    </span>
+  </div>
+</nav>

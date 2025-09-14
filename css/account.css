@@ -1,0 +1,85 @@
+*{
+    color: white;
+}
+
+
+.seccionAccount{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.seccionAccount h1{
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 2.3em;
+    padding: 2%;
+    position: relative;
+}
+.seccionAccount h1::before{
+    content: '';
+    position: absolute;
+    background-color: var(--color-principal);
+    width: 10%;
+    height: 4px;
+    left: 45%;
+    top: 80%;
+    border-radius: 10px;
+
+}
+.menuAccount{
+    width: 23vw;
+}
+.optionsAccount{
+    width: 73vw;
+}
+
+.menuAccount, .optionsAccount{
+    background-color: var(--color-principal);
+    border-radius: 5px;
+    padding: 15px;
+
+}
+
+.menuAccount ul li{
+    font-size: 1.6em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+.menuAccount ul li:before{
+    content: '';
+    width: 50%;
+    left: 5%;
+    border-radius: 5px ;
+    position: absolute;
+
+    height: 5px;
+    top: 100%;
+    background-color: var(--color-primary-hover);
+}
+.editUserForm{
+    background: none;
+    box-shadow: none;
+    border: none;
+}
+.editUserForm label{
+    font-size: 1.4em;
+    margin-top: 10px ;
+    margin-bottom: -2px;
+}
+.editUserForm input{
+    border-radius: 5px;
+    background-color: var(--color-primary-hover);
+    border: none;
+}
+.editUserForm input::placeholder{
+    color: var(--color-verde);
+    font-size: 1.2em    ;
+}
+.btnSubmit{
+    background-color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+

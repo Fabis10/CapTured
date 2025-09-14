@@ -1,0 +1,39 @@
+h1{
+    margin: 5%;
+    position: relative;
+}
+.about-text{
+    height: 40vh;
+    padding: 50px;
+}
+.about-us{
+    background: url('/nosotros.jpeg'), #000000b0; /* Imagen + Color negro translúcido */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: darken;
+}
+.galery{
+    display: flex;
+    justify-content: center;
+    height: 20rem;
+    gap: 1rem;
+    margin: auto;
+    width: 60vw;
+}
+.galery > div{
+    flex: 1;
+    border-radius: 1rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+    transition: all 0.8s cubic-bezier(.25, .4, .45, 1.4);
+}
+.galery > div:hover{
+    flex: 3.3;
+}
+
+#nosotros{
+    position: absolute;
+    top: -550%;
+}
